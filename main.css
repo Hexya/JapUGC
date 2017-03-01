@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Roboto|Roboto+Condensed');
+/*a
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+a*/
+
+
+.fix {
+  position: fixed;
+  z-index: 2;
+  color: grey;
+  cursor: pointer;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 0.75em;
+}
+
+
+.leftSign {
+  margin: -35px 0 0 940px;
+  height: 30px;
+  width: 30px;
+  background-color: #252425;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+.leftLog {
+  margin: -20px 0 0 800px;
+  height: 30px;
+  width: 30px;
+  background-color: #252425;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+.rightSign {
+  margin: -30px 0 0 1040px;
+  height: 30px;
+  width: 30px;
+  background-color: #252425;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+.rightLog {
+  margin: -30px 0 0 900px;
+  height: 30px;
+  width: 30px;
+  background-color: #252425;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+.midSign {
+  margin: -11px 0 0 955px;
+  height: 16.5px;
+  width: 100px;
+  background-color: #252425;
+  border-radius: 2px;
+}
+.midLog {
+  margin: -12px 0 0 815px;
+  height: 18px;
+  width: 100px;
+  background-color: #252425;
+  border-radius: 2px;
+}
+.signin {
+  margin-left: 35px;
+}
+.login {
+  margin-left: 40px;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-position: top;
+  background-repeat: repeat-x;
+}
+.container {
+  width: 90%;
+  height: 2000px;
+  background-color: white;
+}
+.header {
+  background-color: #252425;
+}
+.logoUgc {
+  position: absolute;
+  background-image: url("./img/logo/Logo-UGC.png");
+  background-size: contain;
+  height: 20vh;
+  width: 20%;
+  z-index: 2;
+}
+/****************CAROUSEL********************/
+/****************CAROUSEL********************/
+.carousel-cell {
+  width: 100%;
+  height: 400px;
+  background: black;
+  counter-increment: gallery-cell;
+}
+.img1, .img2, .img3, .img4, .img5 {
+  background-position: center;
+  background-size: cover;
+}
+.img1 {background-image: url("./img/header/DBONEimg.png");}
+.img2 {background-image: url("./img/header/YOURimg.png");}
+.img3 {background-image: url("./img/header/DJimg.jpg");}
+.img4 {background-image: url("./img/header/TOTOimg.jpg");}
+.img5 {background-image: url("./img/header/MAGIimg.jpg");}
+
+/* cell number */
+/*.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}*/
+/****************MENU********************/
+/****************MENU********************/
+
+.menuList {
+  list-style: none;
+  display: flex;
+  margin-top: 30px;
+  padding:10px 0px 10px 20px;
+  background-color: #252425;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: grey;
+  font-size: 1em;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuList li {
+  cursor: pointer;
+  padding-right: 5%;
+  transition: color 0.2s ease-out;
+  font-family: Uni - Regular;
+}
+.menuList li:hover {
+  color: rgb(240, 240, 240);
+  transition: color 0.2s ease-out;
+}
+.menuList li:after {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 2%;
+  content: '';
+  width: 1px;
+  height: 10px;
+  transform: translate3d(0,-50%,0);
+  background: grey;
+}
+.menuList li:nth-last-child(1):after {
+  background: #252425;
+}
+.menuList li input[type=text] {
+    background-color: white;
+    outline:none;
+    border-radius: 2px;
+    border-color: transparent;
+    width: 130px;
+    padding-right: 100px;
+    padding-top: 5px;
+    margin-top: -5px;
+}
+
+/****************ANIME BLOC********************/
+/****************ANIME BLOC********************/
+.bodyBloc {
+  display: flex;
+}
+.animBloc{
+  height: auto;
+  width: 55%;
+  background-color: rgb(240, 240, 240);
+}
+.sug1 {
+  font-size: 3em;
+  color: rgb(231, 23, 23);
+  font-family: 'Oswald', sans-serif;
+  padding-left: 20px;
+}
+.sug2 {
+  margin-top: -60px;
+  font-size: 1.4em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-left: 20px;
+}
+.firstLine {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.anim {
+  cursor: pointer;
+  height: 320px;
+  width: 160px;
+  margin: 0px 10px 0px 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.titleAn {
+  margin-top:0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9em;
+}
+.an1 {
+  background-image: url(./img/anime/FATimg.jpg);
+}
+.star {
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 295px;
+  transition: transform 0.2s ease-out;
+}
+.anim.an1:hover .star {
+  transform: translate3d(0,-280%,0);
+}
+.anim:hover .star {
+  transform: translate3d(0,-180%,0);
+}
+.anim:hover .titleAn {
+  color: red;
+  transition: .3s ease-out;
+}
+.an2 {background-image: url(./img/anime/SAOimg.jpg);}
+.an3 {background-image: url(./img/anime/NORAimg.jpg);}
+.an4 {background-image: url(./img/anime/REWRITEimg.jpg);}
+.an5 {background-image: url(./img/anime/DANGANimg.jpg);}
+.an6 {background-image: url(./img/anime/ACCimg.jpg);}
+
+/****************LEFT BLOC********************/
+/****************LEFT BLOC********************/
+
+.leftBloc{
+  height: auto;
+  width: 42%;
+  height: 570px;
+  margin-left: 3%;
+  background-color: rgb(240, 240, 240);
+}
+.inCine {
+  font-size: 1.5em;
+  color: #252425;
+  font-family: 'Oswald', sans-serif;
+  padding-left: 20px;
+}
+.selectPos {
+  display: flex;
+}
+select {
+  border:solid 1px #252425;
+  background-color: #252425;
+  cursor:  pointer;
+  color: grey;
+}
+.select {
+  border:solid 1px #252425;
+  background-color: #252425;
+  width: 24%;
+  margin-left: 15px;
+}
+.validate {
+  border:solid 1px #252425;
+  background-color: #252425;
+  width: 10%;
+  cursor:  pointer;
+  margin-left: 15px;
+  color: grey;
+}
+.sale {
+  cursor: pointer;
+  height: 40vh;
+  width: 90%;
+  margin: 5% 0 0 5%;
+  background-image: url("./img/other/osakaSLs.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.containFb {
+  display: flex;
+  border: solid 1px rgb(200,200,200);
+  width: 90%;
+  margin: 5% 0 0 5%;
+  border-radius: 3px;
+}
+.logoFb {
+  background-image: url("./img/logo/Logo-UGC.png");
+  background-position: center;
+  background-size: cover;
+  margin: 0 0 0 5%;
+  height: 55px;
+  width: 65px;
+}
+.likeDesc {
+  margin: 0 0 0 5%;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(68, 94, 158);
+}
+.fbLike {
+  border: solid 1px rgb(200,200,200);
+  background-color: white;
+  border-radius: 2px;
+  height: 25px;
+  width: 125px;
+  background-image: url("./img/other/fbLike.png");
+  background-position: center;
+  cursor: pointer;
+  background-size: contain;
+}
+.numberLike {
+  font-family: 'Roboto', sans-serif;
+  margin: 7% 0 0 2%;
+  font-size: 0.75em;
+}
+.numberFriend {
+  margin:2% 0 0 12%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75em;
+}
+.friendLike {
+  cursor: pointer;
+  background-image: url("./img/other/friendLike.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 38px;
+  width: 300px;
+  margin:0 0 0 5%;
+}
+
+/****************BOT BLOC********************/
+/****************BOT BLOC********************/
+.botBloc {
+  width: 55%;
+  background-color: rgb(240, 240, 240);
+  margin: -2% 0 0 0;
+}
+.magContain {
+  display: flex;
+}
+.ici {
+  cursor: pointer;
+  color: rgb(231, 23, 23);
+}
+.posMag {
+  font-size: 1.5em;
+  color: #252425;
+  font-family: 'Oswald', sans-serif;
+  margin: 5% 0 0 2%;
+}
+.textMag2 {
+  margin-top:-30px;
+}
+.mag {
+  cursor: pointer;
+  background-image: url("./img/other/MAGimg.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 0 0 2%;
+  height: 300px;
+  width: 300px;
+}
+
+/****************FOOTER********************/
+/****************FOOTER********************/
+
+.footer {
+  height:600px;
+  background-color: rgb(240, 240, 240);
+  margin: 2% 0 0 0;
+}
+.containCol {
+  display: flex;
+  justify-content: space-around;
+}
+.col {
+  height: 380px;
+  width: 20%;
+}
+.cineId {
+  margin-left: -45px;
+	list-style-type: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.8em;
+}
+.cineId li:before {
+	content: "\2022";
+	color: rgb(240, 240, 240);
+}
+.cineId li {
+	color: #252425;
+}
+.city {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.cineCity {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+}
+.more {
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 35%;
+  height: 50px;
+  width: 250px;
+}
